@@ -3,7 +3,6 @@
 get_header();
 
 ?>
-
 <?php 
     //loop through all post
     while(have_posts()) : the_post();
@@ -11,7 +10,7 @@ get_header();
 <!--  header title wrapped in h1 tag --->
     <h1>
         <?php 
-        //display page title
+        //display post title
             the_title();
             
         ?>
@@ -19,9 +18,9 @@ get_header();
     
  
         <?php 
-        //display page content
+        //display post content
             the_content();
-
+            
         // end while
              endwhile;
               ?>
